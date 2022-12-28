@@ -13,12 +13,14 @@ Statics General Cryptocoins - API (EM DESENVOLVIMENTO)
 Descrição
 
  API para realizar cálculo de Monte Carlo da lista de criptomoedas disponibilizadas na Coingecko, além de sentimentos positivos e negativos da plataforma Reddit.
+ 
+ Abaixo é disponibilizado o link da API que consome os dados dos cálculos para visualização.
 
 **Background in:** Python
 
 **Links:**
 * [LinkedIn](https://www.linkedin.com/in/flavio-r-salazar)
-* [API de cálculos](https://github.com/SalazarF92/crypto-master-api)
+* [API de consumo](https://github.com/SalazarF92/crypto-master-api)
 
 
 
