@@ -4,6 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+psycopg2-binary = "*"
+praw = "*"
+pandas = "*"
+nltk = "*"
+requests = "*"
+python-binance = "*"
+schedule = "*"
 
 [dev-packages]
 

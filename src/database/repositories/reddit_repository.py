@@ -9,8 +9,8 @@ class RedditRepository:
         self.cursor = conn.cursor()
 
     def set_values(self):
-        psql_delete = """DELETE FROM sentiments_reddit"""
-        self.cursor.execute(psql_delete)
+        # psql_delete = """DELETE FROM sentiments_reddit"""
+        # self.cursor.execute(psql_delete)
         psql = """INSERT into sentiments_reddit(coin_name, coin_symbol, sentiment_value, sentiment_pos, sentiment_neg) VALUES(%s, %s, %s, %s, %s) RETURNING id"""
         # reddit_data = sentiments_reddit()
         reddit_data = sentiments_reddit()

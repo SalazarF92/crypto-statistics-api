@@ -19,8 +19,10 @@ def main():
     def job_sentiment():
         RedditRepository(conn.conn).set_values()
 
-    schedule.every(20).seconds.do(job_mc)
-    schedule.every(21).seconds.do(job_sentiment)
+    # schedule.every(20).seconds.do(job_mc)
+    # schedule.every(21).seconds.do(job_sentiment)
+    schedule.every().sunday.at("00:30").do(job_mc)
+    schedule.every().day.at("06:00").do(job_sentiment)
 
     def scheduled():
         while True:

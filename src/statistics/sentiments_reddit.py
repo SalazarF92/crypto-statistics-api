@@ -38,6 +38,7 @@ r = praw.Reddit(
 
 
 def sentiments_reddit():
+    print('startei sentiments')
 
     all_coins_subreddit = []
     all_data = []

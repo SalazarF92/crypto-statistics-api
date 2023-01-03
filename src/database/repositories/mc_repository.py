@@ -17,15 +17,3 @@ class MCRepository:
             self.cursor.execute(psql, (str(mc['extreme'][x][0]), mc['start'],  mc['end'], mc['next'],
                                 float(mc['extreme'][x][1]), float(mc['extreme'][x][2])))
             self.conn.commit()
-
-    def get_interval(self):
-        rowarray_list = []
-        psql = """SELECT crypto_exchange, min_variation, max_variation FROM monte_carlo where (EXTRACT(EPOCH FROM (next_date - now()))) > -43200 """
-        self.cursor.execute(psql)
-        scrap = self.cursor.fetchall()
-        print(scrap)
-        for row in scrap:
-          t = ({'crypto_exchange': row[0], 'min_variation': float(row[1]), 'max_variation': float(row[2])})
-          rowarray_list.append(t)
-          
-        return json.dumps(rowarray_list)
