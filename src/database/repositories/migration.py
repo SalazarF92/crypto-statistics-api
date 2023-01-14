@@ -29,6 +29,32 @@ sentiments_reddit = """
 
         """
 
+cryptos =  """
+    CREATE TABLE IF NOT EXISTS cryptos (
+        id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+        name VARCHAR(255) NOT NULL,
+        symbol VARCHAR(255) NOT NULL,
+        price VARCHAR(255) NOT NULL,
+        market_cap VARCHAR(255) NOT NULL,
+        volume_24h VARCHAR(255) NOT NULL,
+        percent_change_1h VARCHAR(255) NOT NULL,
+        percent_change_24h VARCHAR(255) NOT NULL,
+        percent_change_7d VARCHAR(255) NOT NULL,
+        last_updated VARCHAR(255) NOT NULL,
+        user_id UUID REFERENCES users(id)
+    );
+"""
+
+
+# r = requests.get(
+#     'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false').json()
+
+# psql = """INSERT INTO coin(name, market_cap, market_cap_rank, symbol, image, max_supply, value) VALUES( % s, % s, % s, % s, % s, % s, % s) RETURNING id"""
+
+# for currency in r:
+#     cursor.execute(psql, (currency['name'], currency['market_cap'], currency['market_cap_rank'],
+#                           currency['symbol'], currency['image'], currency['max_supply'], currency['current_price']))
+
 
 def command_tables(conn):
     create_tables = [uuid, monte_carlo, sentiments_reddit]
