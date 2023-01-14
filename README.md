@@ -1,5 +1,5 @@
-# crypto-statistics-api
-Statics General Cryptocoins - API (EM DESENVOLVIMENTO)
+# Statistics and Sentiments Crypcoturrencies
+Statics General Cryptocurrency (In Development)
 
 [![author](https://img.shields.io/badge/author-FlavioSalazar-red.svg)](https://www.linkedin.com/in/flavio-r-salazar) [![](https://img.shields.io/badge/python-blue.svg)](https://www.python.org/downloads/release/python-370/) [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/salazarf92/crypto-master-api/issues)
 
@@ -10,17 +10,17 @@ Statics General Cryptocoins - API (EM DESENVOLVIMENTO)
 # Flavio Salazar
 <sub>*Full Stack Developer*</sub>
 
-Descrição
+Description
 
- API para realizar cálculo de Monte Carlo da lista de criptomoedas disponibilizadas na Coingecko, além de sentimentos positivos e negativos da plataforma Reddit.
- 
- Abaixo é disponibilizado o link da API que consome os dados dos cálculos para visualização.
+  This API is a complementary service to the consumption API provided in Links section.
+  
+  The proposal of this service is only to calculate de Monte Carlo simulations of cryptocurrencies and their sentiments from Reddit Platform.
 
 **Background in:** Python
 
 **Links:**
 * [LinkedIn](https://www.linkedin.com/in/flavio-r-salazar)
-* [API de consumo](https://github.com/SalazarF92/crypto-master-api)
+* [consumption API](https://github.com/SalazarF92/crypto-master-api)
 
 
 
