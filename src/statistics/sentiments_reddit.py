@@ -1,4 +1,5 @@
 from cmath import isnan
+import os
 import pandas as pd
 import numpy as np
 
@@ -31,8 +32,8 @@ coins = requests.get(url).json()
 
 r = praw.Reddit(
     user_agent="salazares",
-    client_id="CyPDUtS0eI9oe3uMUthV5A",
-    client_secret="YJWKfOiJKzVKkXZ90bnbLgjcpT_e6g",
+    client_id=os.getenv("CLIENT_ID"),
+    client_secret=os.getenv("CLIENT_SECRET"),
     check_for_async=False,
 )
 
