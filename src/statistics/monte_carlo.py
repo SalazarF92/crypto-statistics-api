@@ -39,7 +39,7 @@ def monte_carlo(url):
         array_symbols = list(dict.fromkeys(array_symbols))
         
 
-        api_key = 'GogPapESsgtKi9w4k8thaJKVUZfFwCUguR37Go1nVr5giPNq7UwFYAkHgDQMumPl'
+        api_key = os.getenv('BINANCE_KEY')
         api_secret = os.getenv('SECRET_KEY')
 
         # the sequence of columns of kline-interval-dataframe in binance is?
