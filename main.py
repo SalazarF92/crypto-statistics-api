@@ -23,6 +23,7 @@ def main():
     def job_cryptos():
         CryptoRepository(conn.conn, url).set_coins()
 
+    schedule.every(10).seconds.do(job_cryptos)
     # schedule.every(60).seconds.do(job_mc)
     # schedule.every(59).seconds.do(job_sentiment)
     schedule.every().sunday.at("00:30").do(job_cryptos)

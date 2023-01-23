@@ -33,7 +33,7 @@ cryptos =  """
     CREATE TABLE IF NOT EXISTS coin (
         id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
         name VARCHAR(255) NOT NULL,
-        symbol VARCHAR(255) NOT NULL,
+        symbol VARCHAR(255) NOT NULL UNIQUE,
         value VARCHAR(255) NOT NULL,
         market_cap VARCHAR(255) NOT NULL,
         market_cap_rank VARCHAR(255) NOT NULL,
